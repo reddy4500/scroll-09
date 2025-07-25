@@ -1,0 +1,124 @@
+/* General body styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb; /* Equivalent to bg-gray-50 */
+}
+
+/* Styling for input groups in the form */
+.input-group {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    border: 1px solid #e5e7eb;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 0.25rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-group input:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #4f46e5;
+    border-color: #4f46e5;
+}
+
+/* Styling for output cards */
+.output-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border: 1px solid #e5e7eb;
+}
+
+.output-card h3 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+/* Key-value pair styling in output cards */
+.output-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.output-item span:first-child {
+    color: #4b5563;
+}
+
+.output-item span:last-child {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    color: #4f46e5;
+}
+
+/* General button styling */
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transition: transform 150ms;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #a5b4fc;
+}
+
+/* Primary button (indigo) */
+.btn-primary {
+    background-color: #4f46e5;
+}
+
+.btn-primary:hover {
+    background-color: #4338ca;
+}
+
+/* Secondary button (gray) */
+.btn-secondary {
+    background-color: #4b5563;
+}
+
+.btn-secondary:hover {
+    background-color: #374151;
+}
+
+/* Canvas for drawing geometry */
+canvas {
+    width: 100%;
+    height: auto;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+}
